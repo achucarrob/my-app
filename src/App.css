@@ -43,7 +43,7 @@
 }
 
 body {
-  background: rgb(251, 238, 172);
+  background: rgb(251, 242, 198);
   font-family: "Roboto", sans-serif;
 }
 
@@ -78,12 +78,16 @@ header {
 .search-button {
   margin-left: 5px;
   font-size: 16px;
-  background-color: rgb(117, 194, 246);
+  background-color: rgb(82, 140, 178); 
   color: white;
   border: none;
   padding: 20px;
   line-height: 1;
   border-radius: 5px;
+}
+
+.search-button:hover {
+  background-color: rgb(117, 194, 246);
 }
 
 main {
@@ -137,6 +141,24 @@ footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
   padding-top: 15px;
-
   color: rgba(39, 33, 66, 0.4);
+}
+
+p {
+  display: inline-block; /* Make elements behave like inline blocks */
+  /* margin: 0 10px;  Add some spacing between elements */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Enlace visitado con color púrpura */
+a:visited {
+  color: blueviolet;
+}
+
+/* Enlace al pasar el cursor con fondo verde */
+a:hover {
+  color: blue;
 }
