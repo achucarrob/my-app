@@ -43,7 +43,7 @@ function App() {
         </main>
         <footer>
           <p>This project was coded by Claudia Achucarro. You can find the repository in</p>
-          <a href="https://github.com/achucarrob/my-app" target="_blank"> this link.</a>
+          <a href="https://github.com/achucarrob/my-app" target="_blank" rel="noreferrer"> this link.</a>
         </footer>
       </div>
     </div>
