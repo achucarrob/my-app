@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="weather-app">
+        <header>
+          <form>
+            <input
+              type="search"
+              placeholder="Enter a city.."
+              required=""
+              className="search-input"
+            />
+            <input
+              type="submit"
+              defaultValue="Search"
+              className="search-button"
+            />
+          </form>
+        </header>
+        <main>
+          <div className="current-weather">
+            <div>
+              <h1 className="current-city">Paris</h1>
+              <p className="current-details">
+                Tuesday 21:46, thunderstorm
+                <br />
+                Humidity: 80%, Wind: 15 km/h
+              </p>
+            </div>
+            <div className="current-temperature">
+              <span className="current-temperature-icon">☀️</span>
+              <span
+                className="current-temperature-value"
+                id="current-temperature"
+              >
+                24
+              </span>
+              <span className="current-temperature-unit">°C</span>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <p>This project was coded by Claudia Achucarro</p>
+        </footer>
+      </div>
     </div>
   );
 }
